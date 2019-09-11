@@ -16,15 +16,16 @@ const log = {
   }
 };
 
-function pushOrigin() {
+function pushOrigin(message) {
   console.log('inter');
   execSync(`git checkout master`);
   execSync('git add .');
-  execSync(`git commit -m "feat:${this.getTime()} done"`);
+  execSync(`git commit -m " ${message}"`);
   execSync(`git push hmx master`);
   log.success('Please, Keep learning and keep progressing');
   log.success('Bye!');
 }
 
-pushOrigin();
+const commitMessage = 'feat: step five done';
+pushOrigin(commitMessage);
 
