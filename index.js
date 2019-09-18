@@ -26,6 +26,6 @@ function pushOrigin(message) {
   log.success('Bye!');
 }
 
-const commitMessage = 'feat: step five done';
+const commitMessage = 'feat: cost not';
 pushOrigin(commitMessage);
 
