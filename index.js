@@ -26,6 +26,6 @@ function pushOrigin(message) {
   log.success('Bye!');
 }
 
-const commitMessage = 'feat: add structure data';
+const commitMessage = 'feat: add fund';
 pushOrigin(commitMessage);
 
